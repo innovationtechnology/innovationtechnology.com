@@ -1,0 +1,53 @@
+.photo-container img {
+   
+    height:100%;
+    width:100%;
+   
+}
+.photo-container p {
+    display:none;
+    margin-top:-100px;
+    background-color:grey;
+}
+.photo-container h3 {
+    color:white;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+.photo-container .photo1:hover .p1 
+{
+    background: yellow;
+    margin-top:-100px;
+    position:absolute;
+    width:250px;
+} 
+.photo-container .photo2:hover .p2 
+{
+    background: blue;
+    margin-top:-100px;
+    position:absolute;
+    width:250px;
+} 
+.photo-container .photo3:hover .p3 
+{
+    background: green;
+    margin-top:-100px;
+    position:absolute;
+    width:250px;
+} 
+.photo-container .photo4:hover .p4
+{
+    background: magenta;
+    margin-top:-100px;
+    position:absolute;
+    width:250px;
+} 
+.p1, .p2, .p3, .p4  {
+    background: yellow;
+    margin-top:-100px;
+    position:absolute;
+    width:100px;
+    display:hidden;
+  }
+  

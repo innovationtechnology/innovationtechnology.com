@@ -1,0 +1,54 @@
+#slider {
+	overflow:hidden;
+	height:400px;
+	width:100%;
+	margin-top:10px;
+	
+	
+}
+#slider figure {
+	
+	position:relative;
+	width:500%;
+	
+	left:0;
+	/*** using the css style3 called animation  */
+	animation: 20s slider infinite;
+	
+}
+#slider figure img {
+	width:20%;
+	float:left;
+	height:400px;
+	margin-tp:10px;
+	
+}
+@keyframes slider{
+	0%{
+		left:0;
+	}
+	20% {
+		left:0;
+	}
+	25% {
+		left:-100%;
+	}
+	45%{
+		left:-100%;
+	}
+	50% {
+		left:-200%;
+	}
+	70% {
+		left:-200%;
+	}
+	75%{
+		left:-300%;
+	}
+	95% {
+		left:-300%;
+	}
+	100% {
+		left:-400%;
+	}
+}

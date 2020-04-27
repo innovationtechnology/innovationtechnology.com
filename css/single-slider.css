@@ -1,0 +1,36 @@
+.slide {
+	float:left;
+}
+.slides {
+	width:calc(250px * 9);
+	animation: glisse 10s infinite;
+}
+.left-bar {
+	width:250px;
+	overflow:hidden;
+	
+}
+
+@keyframes glisse {
+	0%{
+		transform: translateX(0);
+	}
+	10%{
+		transform: translateX(0);
+	}
+	33% {
+		transform: translateX(-500px);
+	}
+	43%{
+		transform: translateX(-500);
+	}
+	66% {
+		transform: translateX(-1000px);
+	}
+	76%{
+		transform: translateX(-1000);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}

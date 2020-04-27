@@ -1,0 +1,259 @@
+<html>
+	<head>
+		<title>HOME</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/slider.css">
+		<link rel="stylesheet" href="css/single-slider.css">
+		<link rel="stylesheet" type="text/css" href="responsiveMenu.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!----------------------------jQuery--------------------------------------------------------------------------->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+		<script>
+			$(document).ready(function(){
+			  $("div").delegate("p", "hover", function(){
+				$(this).slideToggle();
+			  });
+			  $("button").hover(function(){
+				$("<p>This is a new paragraph.</p>").insertAfter("button");
+			  });
+			});
+			</script>
+
+		<!------------------------------------------------------------------------------------------------------------>
+
+	
+
+		<!--- --------------------------------------------- Flikity links      ----------------------------------------->
+
+			<meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width",intitial-scale-1.0">
+		<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+		<!------                 Flikity css code is not working externally so included internally --------------------->
+
+
+<style>
+				.flikity-body {
+					background-color: #2c3e50;
+				}
+				.cell {
+					width: 16.9%;
+					height:310px;
+					display: inline-block;
+					margin: 0 15px;
+					border: 3px solid #f10f0f;
+					border-radius: 8px;
+					overflow: hidden;
+					padding-bottom:15px;
+				
+				}
+				.cell img{
+					width: 100%;
+					height: 400px;
+					object-fit: cover;
+				}
+				.flickity-page-dots .dot {
+					
+					background-color:#f70e0e;
+				}
+
+				/* Now I set a responsive */
+
+				@media only screen and (max-width:991px) {
+					
+					/* I show only one slide */
+					width:100%;
+				}
+
+		</style>
+
+
+
+
+
+		<!-------------------------------------------------------------------------------------------------------------------->
+		
+	</head>
+	<body>
+		<div id="body">	
+			<div id="header">
+				<div id="media">		
+					<span class="space">information@gmail.com</span>&nbsp;&nbsp;&nbsp;<span>Call us:04863548</span>
+					<span id="space2">Visit Place: New York City</span>
+				</div>
+				<div id="logos">
+					<a href="" bgcolor="black"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;
+					<a href=""><i class="fa fa-envelope-o" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;
+					<a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+				</div>
+				
+				<h1 class="space1"><img src="images/logos.png" alt="no image" class="logos">FlatOn Pro</h1>
+				<p class="spaced" id="margin-top">Multipurpose word theme</p>
+
+				<!---------	------------------------------------ NAVIGATION MENU BAR --------------------------->	
+
+			<div class="nav">
+			
+				<nav>
+					<div class="toggle">
+						<i class="fa fa-bars menu" aria-hidden="true"></i>
+					</div>				
+					<ul class="nav-ul" style="visibility:visible; z-index:100;">
+						<div id="menu-space">
+						<li class="active"><a href="file:///F:/html/modules/test/sample/index.html">Home</a></li>
+						<li><a href="#">About Us</a>
+							<!--<div class="sub-menu">-->
+								<ul class="nav-ul2">
+									<li><a href="#">Mission</a></li>
+									<li><a href="#">Vision</a></li>
+									<li><a href="#">Team</a></li>
+								</ul>
+							<!--</div>-->
+
+						</li>
+						<li><a href="#">News</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Feedback</a></li>
+						<li><a href="file:///F:/html/modules/test/sample/contactUs.html">Contact</a></li>
+						</div>
+
+					</ul>
+				</nav>				
+				<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+				<script type="text/javascript">
+					$(document).ready(function() {
+						$('.menu').click(function() {
+							$('ul').toggleClass('active');
+						})
+					})
+				</script>
+
+	
+			</div>
+			</div>
+	<!---------------------------------SLIDER---------------------------------------------------------------->		
+			<div id="">
+				<div id="slider">
+			<!----- Add the image content inside the figure tag ----------------->
+					<figure>
+						<img src="images/real1.jpg" alt="" >
+						<img src="images/real2.jpg" alt="" >
+						<img src="images/real3.jpg" alt="">
+						<img src="images/real1.jpg" alt="" >
+						<img src="images/real2.jpg" alt="" >
+					</figure>
+				</div>
+				
+				<div id="services">
+					<h2>Services</h2>
+				
+			<!-------------------------------    LEFT BAR USING SINGLE SLIDE ---------------------------------->		
+				
+				
+					<div class="left-bar" id="flex">
+						<div class="slides">
+
+							<div class="slide"><img src="images/a.jpeg" alt="" /></div>
+							<div class="slide"><img src="images/b.jpg" alt="" /></div>
+							<div class="slide"><img src="images/c.jpg" alt="" /></div>
+							<div class="slide"><img src="images/a.jpeg" alt="" /></div>
+							<div class="slide"><img src="images/b.jpg" alt="" /></div>
+							<div class="slide"><img src="images/c.jpg" alt="" /></div>
+							
+							 
+						</div>
+						
+					</div>
+					
+				
+					
+		<!------------------------------- --------------------------------------------------------------------->					
+
+					<div id="container" id="flex">
+						<ul class="menu">
+							<li class="li"><a href="">Research</a></li>
+							<li class="li"><a href="">Usability</a></li>
+							<li class="li"><a href="">Design</a></li>
+							<li class="li"><a href="">Smart</a></li>
+							
+						</ul>
+						
+					</div>
+					<br class="clear">
+                </div>
+    
+                	<!----------------------------------------------------------------------------------------------------------->
+	
+	
+	<div class="main-carousel" style="padding-top:15px; background-color:khaki; justify-content:space-around; margin:15px;">
+
+		<div class="cell"><img src="images/mob1.jpeg" alt="no image"></div>
+		<div class="cell"><img src="images/mob2.jpeg" alt="no image"></div>
+		<div class="cell"><img src="images/cake3.jpg" alt="no image"></div>
+		<div class="cell"><img src="images/cake6.jpg" alt="no image"></div>
+		<div class="cell"><img src="images/cake5.jpg" alt="no image"></div>
+
+		</div>
+
+
+
+
+
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+			<!-- JavaScript -->
+		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+		<script>
+		$(".main-carousel").flickity({
+			cellAlign: 'left', // when started it left
+			wrapAround: true,  // wrapAround Means loop
+			freeScroll: true
+		});
+
+</script>
+
+
+
+
+
+
+	<!-------------------------------  Meet the team ------------------------------------------------------------>		
+			<br><br>	
+				<div id="meet" bgcolor="red">
+				<h2 style="margin-left:15px;">MEET THEM </h2>
+					<div class="meet-images">
+					<div id="person1">
+						<img src="image/p2.jpg" alt="no image">
+					</div>
+					<div id="person2">
+						<img src="image/p2.jpg" alt="no image">
+					</div>
+					<div id="person3">
+						<img src="image/p2.jpg" alt="no image">
+					</div>
+					<br class="clear">
+				</div>	
+				</div>
+			</div>
+
+			<!---------------------------------- Active Menu----------------------------------->
+			<!----------------------------------- NAVIGATION MENU ACTIVE Jquery------------------------------------------->
+
+			<script src="https://code.jquery.com/jquery-3.3.1.js" ></script>
+			
+			<script>
+                $(document).ready(function() {
+                $(document).on("click",".nav-ul li",function(){
+                    $(this).addClass("active").siblings().removeClass("active");
+                });
+            });
+            </script>
+
+		<!------------------------------------------------------------------------------------------------------------>
+			
+			<div id="footer"></div>
+		</div>	
+		
+	</body>
+</html>

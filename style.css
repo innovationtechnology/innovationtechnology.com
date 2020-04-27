@@ -1,0 +1,258 @@
+
+/************************  INDEX PAGE *****************************************************/
+body {
+	width:80%;
+	margin:0 auto;
+	height:150%;
+}
+#logos {
+	color:white;
+	margin-left:80%;
+
+	
+}
+#sliding {
+	margin-top:-16px;
+	background-color:khaki;
+	background-image:url('p2.jpg');
+	
+
+}
+
+#img {
+	width:100%;
+	height:65%;
+}
+#media{
+	background-color:black;
+	color:white;
+	padding:10px;
+	
+}
+.space,.h1,.p{
+	
+	margin-left:200px;
+}
+#space2 {
+	margin-left:250px;
+}
+
+#margin-top{
+	margin-top:-33;
+}
+
+/********************** Navigation Menu Bar **********************/
+.nav {
+	width:100%;
+	background:#000033;
+	height:80px;
+}
+.nav-ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+	position:absolute;
+	
+	
+}
+.nav-ul li {
+	float:left;
+	margin-top:20px;
+	
+}
+.nav-ul li a {
+	width:150px;
+	color:white;
+	display:block;
+	text-decoration:none;
+	font-size:20px;
+	text-align:center;
+	padding:10px;
+	border-radius:10px;
+	font-family:Centuary Gothic;
+	
+}
+a:hover {
+	background-color:#669900;
+}
+.nav-ul li .nav-ul2 {
+	background-color:#000033;
+	margin-top:-19px;
+	
+}
+.nav-ul li .nav-ul2 li {
+	float:none;
+}
+
+.nav-ul li .nav-ul2 {
+	display:none;
+}
+.nav-ul li:hover .nav-ul2{
+	display:block;
+}
+.active, .nav li a:active {
+	background-color:#EEAF6C;
+	border-radius:10px;
+	width:150px;
+	color:black;
+}
+
+
+
+
+
+/********************* body ************************************/
+
+.menu {
+	background-color:grey;
+}
+
+.li {
+	display:inline-block;
+	padding:10px 10px;
+	
+	
+}
+.li a {
+	text-decoration:none;
+	color:red;
+	padding:10px 5px;
+}
+#services {
+	width:60%;
+	margin:0 auto;
+}
+#image {
+	float:left;
+	width:20%
+	
+}
+/************************/
+
+
+/***********************/
+#container {
+	float:right;
+	width:60%;
+	margin-top:-18px;
+}
+#meet {
+	background-color: #DEF1F5 ;
+	clear:both;
+	width:100%;
+	margin:0 auto;
+	border:1px solid red
+	height:200%;
+	
+}
+#person1 {
+	width:33%;
+	float:left;
+	margin-left:1%;
+
+}
+#person2 {
+	width:33%;
+	float:left;
+	margin-left:1%;
+	
+}
+#person3 {
+	width:30%;
+	float:left;
+	margin-left:1%;
+}
+
+.clear {
+	clear:both;
+}
+.menu{
+	width:100%;
+	height:40px;
+	
+	
+}
+
+.menu li p {
+	background-color:orange;
+	float:none;
+}
+.menu li p {
+	display:none;
+}
+.menu li:hover p {
+	display:block;
+	
+}
+
+/************************* contact page *****************************/
+.cont_bgColor {
+	height:100%;
+	background-image:url('image/img.png');
+	margin-top:-20px;
+	
+}
+.contact-head {
+	margin-left:100px;
+	color:white;
+	background-color:skyblue;
+	width:200px;
+	padding-top:20px;
+	
+}
+.address,.message {
+	width:80%;
+	background-image:url('image/y.png');
+	margin-left:100px;
+	
+	
+}
+.address1{
+	width:30%;
+	float:left;
+	margin-left:15px;
+}
+.address1,.land-mark  {
+	margin-left:15px;
+}
+
+.message ul li {
+	
+	float:left;
+	list-style:none;
+	margin-left:5px;
+	
+	
+}
+.details {
+	width:55%;
+	
+}
+.details1 {
+	width:35%;
+}
+.message ul {
+	padding:30px;.
+	
+	
+}
+.message ul .details input{
+	
+	margin-left:20px;
+	height:30px;
+	
+}
+.message ul .details textarea{
+	
+	margin-left:20px;
+	height:180px;
+	width:370px;
+}
+.submit {
+	width:150px;
+	
+}
+.submit:hover {
+	background-color:black;
+	color:white;
+}

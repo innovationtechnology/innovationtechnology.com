@@ -1,0 +1,18 @@
+.contact-container {
+    width:90%;
+    margin:0 auto;
+    background-image: url('../image/img.png');
+    
+}
+.company-address {
+    background-image: url('../image/y.png');
+    text-align: center;
+    padding:3%;
+}
+#map {
+    
+    background-image: url('../image/y.png');
+    text-align: center;
+    padding:3%;
+
+}

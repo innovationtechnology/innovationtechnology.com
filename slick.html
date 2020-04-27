@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SLICK</title>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+        <script type="text/javascript" src="slick.min.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="slick.css"/>
+        <!--Add the new slick-theme.css if you want the default styling -->
+        <link rel="stylesheet" type="text/css" href="slick-theme.css"/>
+        
+        <script type="text/javascript">                 
+        // MULTIPLE ITEM
+            $(document).ready(function(){
+                $('.multiple-items').slick( {
+                    infinite: true,
+                    slidesToShow: 4,
+                    slidesToScroll: 2,
+                    dots:true,
+                    arrow:true,
+                    speed:500,
+                    autoplay:true,
+                    autoplaySpeed:1500
+                });
+                 
+            }); 
+        // SINGLE ITEMS 
+        $(docmument).ready(function() {
+            $('.single-item').slick();
+		 }) ;		
+        </script>
+        <style>
+            .multiple-items div {
+                box-sizing:border-box;
+                border: 2px solid green;
+            }
+            .multiple-items div img {
+                box-sizing:border-box;
+                border:2px solid yellow;
+            }
+            .slick-prev, .slick-next {
+                background-color: red; z-index:1; opacity:1;
+            }
+            .slick-prev {
+                margin-left:10px;
+                background-image: url('images/lftt.png');
+            }
+            .slick-next {
+                margin-right:50px;
+                background-image: url('images/rr.png');
+            }
+            .multiple-items {
+                width:90%;
+                margin:0 auto;
+            }
+        </style>         
+    </head> 
+    <body>
+        <!--<div class="single-item">
+            <div><img src="images/cake3.jpg"></div>
+            <div><img src="images/cake5.jpg"></div>
+            <div><img src="images/cake6.jpg"></div>
+          </div> -->
+          <div class="multiple-items">
+            <div><img src="images/p21.jpg"></div>
+            <div><img src="images/p22.jpg"></div>
+            <div><img src="images/p23.jpg"></div>
+            <div><img src="images/p24.jpg"></div>
+            <div><img src="images/p26.jpg"></div>
+            <div><img src="images/p30.jpg"></div>
+            <!--<div><img src="images/cake5.jpg"></div>
+            <div><img src="images/cake6.jpg"></div>
+            <div><img src="images/cake5.jpg"></div>-->
+          </div>
+    </body>
+</html>

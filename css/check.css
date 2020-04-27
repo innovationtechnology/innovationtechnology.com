@@ -1,0 +1,54 @@
+body {
+    padding:0;
+    margin:0;
+    border-top: 7px solid #29ca8e;
+    height:100%;
+    width:100%;
+    background:lightgray;
+}
+
+.top {
+  
+    border-top: 5px solid #29ca8e;
+}
+.address {
+    display:flex;
+    background:#fff;
+    height:3%;
+    color:black;
+    font-size:normal;
+    font-family:sans-serif;
+    justify-content: space-around;
+    padding-top:10px;
+    position:realtive;
+    
+    
+}
+
+.emplom-logos {
+    display:flex;
+    justify-content: space-around;
+    position: relative;
+}
+.service {
+    display:flex;
+    margin-top:2%;
+    background:darkgray;
+    height:250px;
+}
+.service .column1 {
+    display:flex;
+    width:80%;
+    background-color:darkkhaki;;
+}
+.service .column2 {
+    width:250px;
+    overflow-x: hidden;
+    
+}
+.service .column1 .align {
+    width:30%;
+}
+.msg {
+    transform:scaleX(2);
+}

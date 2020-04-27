@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gallery</title>
+        <!---------------------------------- HOME PAGE ------------------------------------------------------------------------------------>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width-device-width,initial-scale=1">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+       
+
+        <link rel="stylesheet" href="css/check.css">
+        <!------------------------------------------------------------------------------------->
+        <link rel="stylesheet" href="css/about-us.css">
+        <!-------------------------------------FACEBOOK LOGOS----------------------------------------------------------->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--------------------------------------------------- RESPONSIVE MENU------------------------------------------>
+        <link rel="stylesheet" type="text/css" href="css/responsive-menu.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!------------------------------------------------------------------------------------------------------------->
+         <!-------------------------------------  FOOTER------------------------------------------------------------------------>
+         <link rel="stylesheet" href="css/footer.css">
+
+        <!--------------------------------------------------------------------------------------------------------------------------------->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox-plus-jquery.min.js"></script>
+        <script src="js/lightbox-plus-jquery.min.js"></script>
+        <link rel="stylesheet" href="css/lightbox.min.css">
+
+        <link rel="stylesheet" href="css/gallery.css">
+
+
+        <style>
+            .gallery img:hover { filter:grayscale(0%); }
+        </style>
+    </head>
+   
+    <body class="gallery-body">
+        <div class="gallery-container">
+             <!---------------------------------- NAVIGATION BAR ------------------------------------------------------->
+             <div class="row">
+                <div class="col-sm-12">
+                    <div class="nav">
+                        <nav>
+                            <div class="toggle">
+                                <i class="fa fa-bars menu" aria-hidden="true"></i>
+                            </div>				
+                            <ul class="nav-ul" style="visibility:visible; z-index:100;">
+                                <div id="menu-space">
+                                    <li class="image"><img src="images/logos.png" alt="no image" class="logos"></li>
+                                    <li ><a href="http://localhost/snapz/index.html">HOME</a></li>
+                                    <li ><a href="http://localhost/snapz/about-us.html">ABOUT US</a>
+                                       
+                                    </li>
+                                    <li><a href="#">PRODUCTS</a>
+                                         <!--<div class="sub-menu">-->
+                                            <ul class="nav-ul2" style="width:100%; margin-top: -25px;">
+                                                <li ><a href="#" style="margin-left:-50px;">MARRIAGE </a></li>
+                                                <li><a href="#" style="margin-left:-50px;">FASHION</a></li>
+                                                <li><a href="#" style="margin-left:-50px;">TOURS</a></li>
+                                            </ul>
+                                        <!--</div>-->
+            
+                                    </li>
+                                    <li class="active"><a href="#">GALLERY</a></li>
+                                    <li><a href="#">BLOG</a></li>
+                                    <li><a href="http://localhost/snapz/contact.html" class="">CONTACT</a></li>
+                                </div>
+        
+                            </ul>
+                        </nav>				
+                        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+                        <script type="text/javascript">
+                            $(document).ready(function() {
+                                $('.menu').click(function() {
+                                    $('ul').toggleClass('active');
+                                })
+                            })
+                        </script>
+        
+            
+                    </div>
+                </div>	
+             </div>
+       
+           
+
+
+                <!--------------------------------------------------------- GALLERY ------------------------------------------------------------->
+                <h2 style="text-align:center; color:tomato">Gallery</h2>
+                <div class="row" id="our-products">
+                    <div class="col-sm-12">
+                        <h4>MARRIAGE FUNCTIONS</h4>
+                    </div>
+                </div>
+                    <div class="row" style=" padding:40px 5px;">
+                    <div class="column">
+                        <img src="images/p21.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                        <img src="images/p22.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                        <img src="images/p23.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                        <img src="images/p24.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                    </div>
+                    </div>
+                    
+                    <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+                    
+                        <div class="mySlides">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="images/p21.jpg" style="width:100%">
+                        </div>
+                    
+                        <div class="mySlides">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="images/p22.jpg" style="width:100%">
+                        </div>
+                    
+                        <div class="mySlides">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="images/p23.jpg" style="width:100%">
+                        </div>
+                        
+                        <div class="mySlides">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="images/p24.jpg" style="width:100%">
+                        </div>
+                        
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    
+                        <div class="caption-container">
+                        <p id="caption"></p>
+                        </div>
+                    
+                        <div clss="small-images">
+                            <div class="column">
+                            <img class="demo cursor" src="images/p21.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+                            </div>
+                            <div class="column">
+                            <img class="demo cursor" src="images/p22.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+                            </div>
+                            <div class="column">
+                            <img class="demo cursor" src="images/p23.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                            </div>
+                            <div class="column">
+                            <img class="demo cursor" src="images/p24.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    
+                    <script>
+                    function openModal() {
+                    document.getElementById("myModal").style.display = "block";
+                    }
+                    
+                    function closeModal() {
+                    document.getElementById("myModal").style.display = "none";
+                    }
+                    
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+                    
+                    function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                    }
+                    
+                    function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                    }
+                    
+                    function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("demo");
+                    var captionText = document.getElementById("caption");
+                    if (n > slides.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";
+                    dots[slideIndex-1].className += " active";
+                    captionText.innerHTML = dots[slideIndex-1].alt;
+                    }
+                    </script>
+            <!----------------------------------------------------------------------------------------------------------->
+                 
+                    <div class="second-part" style="padding-bottom:3%;">
+                        <h4 class="marriage" style="width:100%;">  COMMERCIAL </h4>
+                        <div class="row" style="background-color: teal; padding-bottom:1%;">
+                            
+                                <div class="gallery" >
+                                 <div class="col-sm-3">
+                                    <a href="images/c12.jpeg" data-lightbox="mygallery" data-title="In Chennai"><img src="images/c12.jpeg" alt="" class="img" ></a>
+                                 </div>
+                                 <div class="col-sm-3">
+                                    <a href="images/c13.jpeg" data-lightbox="mygallery" data-title="At Cochin"><img src="images/c13.jpeg" alt="" class="img" ></a>
+                                </div>
+                                <div class="col-sm-3">
+                                    <a href="images/c14.jpeg" data-lightbox="mygallery" data-title="At Kottayam"><img src="images/c14.jpeg" alt="" class="img" ></a>
+                                </div>
+                                <div class="col-sm-3">
+                                    <a href="images/c15.jpeg" data-lightbox="mygallery" data-title="At Trivandrum"><img src="images/c15.jpeg" alt="" class="img" ></a>
+                                </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                     <!--------------------------------------------------------- FOOTER------------------------------>
+            <div class="row" style="background-color: black;color:white;">
+                
+                <!----<div class="footers" style="width: 102%; margin:0 auto;margin-left:-1%;">
+                     <div class="footer" style=""> -->
+                     <div class="col-sm-3" style="text-align: center;">
+                         <div clss="footer1">
+                             <h3 class="footer-head">CONTACTS</h3>
+                             <div>RBT COMPANY , ELAPPARA</div>
+                             <p><div>Ph:04869254856</div></p>
+                             <p><div>Mob: 9745633657</div></p>
+                             <P>praveenr906@gmail.com</P>
+                         </div>
+                     </div>
+                     <div class="col-sm-3" style="text-align: center;">
+                  
+                         <div clss="footer2">
+                             <h3 class="footer-head">INFORMATION</h3>
+                             <div>RBT COMPANY , ELAPPARA</div>
+                             <p><div>Ph:04869254856</div></p>
+                             <p><div>Mob: 9745633657</div></p>
+                             <P>praveenr906@gmail.com</P>
+                         </div>
+                     </div>
+                     <div class="col-sm-3" style="text-align: center;">
+                         <div clss="footer3">
+                             <h3 class="footer-head">SERVICES</h3>
+                             <div>RBT COMPANY , ELAPPARA</div>
+                             <p><div>Ph:04869254856</div></p>
+                             <p><div>Mob: 9745633657</div></p>
+                             <P>praveenr906@gmail.com</P>
+                         </div>
+                     </div>   
+                     <div class="col-sm-3" style="text-align: center;">
+                         <div clss="footer4">
+                             <h3 class="footer-head">NEWSLETTER</h3>
+                             <div>RBT COMPANY , ELAPPARA</div>
+                             <p><div>Ph:04869254856</div></p>
+                             <p><div>Mob: 9745633657</div></p>
+                             <P>praveenr906@gmail.com</P>
+                         </div>
+                        
+                     </div>  
+                     <!----------------------- DOTTED --------------------------------------------------->
+                     <div class="row">
+                         <div class="col-sm-12">
+                             <p class="dotted-line"></p>
+                         </div>
+                     </div>    
+                     <!----------------------------------- FOOTER BOTTOM ---------------------------------->   
+                     <div class="row">
+                         <div class="col-sm-4" style="text-align: center; margin-left:-15px;">
+                             <div>
+                                 <a href=""><img src="images/fbs.png" alt="" ></a> 
+                                 <a href="" class="icon"><img src="images/twitter-icon.png" class="icon"></a>
+                                 <a href="" class="icon"><img src="images/gmail.png" alt="" class="icon"></a>
+                             </div>
+                         </div>
+                         <div class="col-sm-4" style="text-align: center;">
+                             <p style="text-align: center;">Copyright © 2020 All Rights Reserved by Praveen</p>
+                         </div>
+                         <div class="col-sm-4" style="text-align: center;">
+                             <a href="" style="text-align: center;"><img src="images/fbs.png" alt="" style="margin-left: 15px;"></a> 
+                             <a href="" class="icon"><img src="images/twitter-icon.png" class="icon"></a>
+                             <a href="" class="icon"><img src="images/gmail.png" alt="" class="icon"></a>
+                         </div>
+                     </div>
+                     
+                     
+                         
+             
+                
+                 
+        </div>   <!----------- CONTAINER -------------------->
+            
+    </body>
+</html>

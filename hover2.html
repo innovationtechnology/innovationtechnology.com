@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>show demo</title>
+  
+  <style>
+  p {
+    background: yellow;
+    margin-top:-100px;
+    position:absolute;
+    width:250px;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+ 
+<img src="images/p21.jpg" alt="">
+<p style="display: none">The cursor indicates an alias of something is to be created The cursor indicates an alias of something is to be created The cursor indicates an alias of something is to be created</p>
+ 
+<script>
+$( "img" ).hover(function() {
+  $( "p" ).show( "slow" );
+});
+</script>
+ 
+</body>
+</html>
